@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Lucid's RGB Gradient Generator for MC</title>
+    <link type="text/css" rel="stylesheet" href="grad-x.css" />
+    <link type="text/css" rel="stylesheet" href="colorpicker/css/colorpicker.css" />
+    <link type="text/css" rel="stylesheet" href="index.css?v=1.1" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="colorpicker/js/colorpicker.min.js"></script>
+    <script src="js/dom-drag.js"></script>
+    <script src="js/grad-x.min.js?v=1.2"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>RGB Nick Generator</h1>
+        <form>
+            <input type="text" class="input-text" id="uid-input" value="Name Here" maxlength="16">
+        </form>
+
+        <canvas width="473" height="2" id="gradient-reference"></canvas>
+        <div id="gradX"></div>
+        <div id="preview"></div>
+
+        <form>
+            <textarea cols="80" rows="6" name="rgb-code" id="rgb-code"></textarea>
+            <button id="copy-to-clipboard" class="gradx_btn">Copy to clipboard</button>
+            <div id="copy-clip-notify">
+                <div class="wrap">OK!</div>
+            </div>
+        </form>
+        <div id="attribution">
+            <p class="text-small">Shiny code by LucidFlight. v1.2</p>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
